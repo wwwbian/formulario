@@ -3,7 +3,8 @@ const userSchema= require('../models/datos')
 
 const router= express.Router
 router.post('/users',(req,res)=>{
-    res.send('crear user')
+    const user = userSchema(req.body)
+    
 })
 
 module.exports = router;
